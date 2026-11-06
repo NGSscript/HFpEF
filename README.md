@@ -9,10 +9,10 @@ RNA-seq Pipeline:
       
 ATAC-seq Pipeline:
 **ATACseq_rawdata_pre_processing.sh**: Processes ATAC-seq raw FASTQ files to generate final bigWig tracks and peak files.
+
 Chip-seq Pipeline:
 **Chipseq_peak_processing.sh**: Performs peak counting and bivalent peak definition for H3K4me3 and H3K27me3.
 *Note: These upstream steps utilize tools including fastp, HISAT2, samblaster, featureCounts, bowtie2, sambamba, MACS2, and bamCoverage, as appropriate for each assay.*
-
 
 ### 2. Bioinformatics Analysis 
 **Bioinformatics_analysis.R** implements the comprehensive downstream bioinformatics workflow across multiple omics layers, including Bulk RNA-seq, ChIP-seq, ATAC-seq, and Metabolomics. The script is organized into the following major analytical modules:
